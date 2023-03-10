@@ -1,0 +1,14 @@
+package org.tp2_partie1;
+
+public class DrawingMethod {
+
+    public int calculateArea(Drawing drawing , RectangleMethod method){
+        int Area = 0;
+        for (int i = 0; i< drawing.getRectanglesNumber(); i++){
+            Area += method.claculateArea(drawing.getRectangles()[i]);
+        }
+        return Area;
+    }
+
+    public
+}
