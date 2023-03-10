@@ -10,5 +10,9 @@ public class DrawingMethod {
         return Area;
     }
 
-    public
+    public void move(Drawing drawing , RectangleMethod method ,int X, int Y){
+        for (int i =0; i < drawing.getRectanglesNumber(); i++){
+            method.move(drawing.getRectangles()[i],X,Y );
+        }
+    }
 }
